@@ -1,3 +1,4 @@
+import { About } from "@/components/About";
 import Hero from "@/components/ui/Hero";
 import { FloatingNav } from "@/components/ui/floatingNav";
 import { HomeIcon } from "lucide-react";
@@ -9,6 +10,7 @@ const Home = () => {
     <div>
       <FloatingNav navItems={nav} className='' />
       <Hero />
+      <About />
     </div>
   );
 };
