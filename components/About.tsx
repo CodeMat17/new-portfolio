@@ -27,32 +27,37 @@ export function About() {
           </h1>
 
           <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
-            I am Matthew and my code name is CodeMat. I am an AI Assistant
-            developer and as well, a full stack web developer (Mobile Web
-            Specialist, MWS). It gives me joy to create things that live on the
-            internet. I have passion for creating sleek, intuitive, responsive,
-            dynamic and user-friendly digital experiences. I have 9+ experience
-            in software development and I am ever ready to bring my
-            client&apos;s vision(s) to life.
+            Hi, I&apos;m Matthew (aka CodeMat), a seasoned AI Assistant
+            developer and full stack web developer (Mobile Web Specialist, MWS)
+            with a passion for crafting exceptional digital experiences. With
+            over 9 years of experience in software development, I thrive on
+            creating sleek, intuitive, responsive, dynamic, and user-friendly
+            online solutions.
           </p>
-
-          <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
-            I believe in continuous learning to restack my skills and unlearn
-            the old ways of doing things considering the fact that the internet
-            is always new, refreshing and constantly upgrading.
+          <p className='font-semibold text-base text-slate-500 mb-4 relative z-50'>
+            My Philosophy
           </p>
-
           <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
-            I love giving back to the tech ecosystem by mentoring the younger
-            developers. I have mentored and facilitated meetups across Africa
-            (physically and remotely) for Google Africa via Andela Learning
-            Community, ALC, programme for 3 seasons.
+            I believe in continuous learning, updating my skills to keep pace
+            with the ever-evolving internet landscape. I&apos;m dedicated to
+            mentoring younger developers, having facilitated meetups across
+            Africa (physically and remotely) for Google Africa via the Andela
+            Learning Community (ALC) program for three seasons.
           </p>
-
+          <p className='font-semibold text-base text-slate-500 mb-4 relative z-50'>
+            More...
+          </p>
           <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
-            I am also a class 20 member of Policy, Strategy and Leadership
-            Course, (PSLC 20) of the prestigious institute, National Institute
-            For Policy and Strategic Studies, NIPSS, Kuru, Jos, Nigeria.
+            I&apos;m a proud member of the Policy, Strategy, and Leadership
+            Course (PSLC 20) at the prestigious National Institute For Policy
+            and Strategic Studies (NIPSS), Kuru, Jos, Nigeria.
+          </p>
+          <p className='font-semibold text-base text-slate-500 mb-4 relative z-50'>
+            Let&apos;s Connect
+          </p>
+          <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
+            I&apos;m excited to collaborate and bring your vision to life.
+            Let&apos;s build something amazing together!
           </p>
 
           {/* <button className='border px-4 py-1 rounded-lg  border-gray-500 text-gray-300'>

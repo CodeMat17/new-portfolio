@@ -1,7 +1,9 @@
 import { About } from "@/components/About";
+import { EductionExperience } from "@/components/EducationExperience";
 import SkillsBtn from "@/components/SkillsBtn";
 import Hero from "@/components/ui/Hero";
 import { FloatingNav } from "@/components/ui/floatingNav";
+
 import { HomeIcon } from "lucide-react";
 
 const Home = () => {
@@ -13,6 +15,7 @@ const Home = () => {
       <Hero />
       <About />
       <SkillsBtn />
+      <EductionExperience />
     </div>
   );
 };
