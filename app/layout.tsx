@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: "Matthew Chukwu | Web Developer",
   description:
     "Matthew is a full stack developer working with modern tools like React, Next.js, tailwindcss, Supabase, etc",
-  verification: {
-    google: "FUEOtzbOq6CDoNsSr6EdGUHNTvhV9HM-S0r_rIyCNCw",
-  },
+  // verification: {
+  //   google: "FUEOtzbOq6CDoNsSr6EdGUHNTvhV9HM-S0r_rIyCNCw",
+  // },
   twitter: {
     card: "summary",
     title: "Matthew Chukwu | Web Developer",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Matthew is a full stack developer working with modern tools like React, Next.js, tailwindcss, Supabase, etc",
     url: "https://matthewchukwu.com.ng",
-    siteName: "Portfolio website",
+    // siteName: "Portfolio website",
     images: [
       {
         url: "https://res.cloudinary.com/mctony17/image/upload/v1689562761/Soft-lutions/Seo/dev.png",
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     type: "website",
     // authors: ["Matthew Chukwu"],
   },
-  robots: {
-    index: true,
-    nocache: false,
-  },
+  // robots: {
+  //   index: true,
+  //   nocache: false,
+  // },
 };
 
 export default function RootLayout({
