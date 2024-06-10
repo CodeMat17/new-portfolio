@@ -7,7 +7,7 @@ export function EductionExperience() {
       title: "Education",
       value: "education",
       content: (
-        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
+        <div className='w-full overflow-hidden relative h-full rounded-2xl px-5 py-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
           <p>Education</p>
           <EducationContent />
         </div>
@@ -17,7 +17,7 @@ export function EductionExperience() {
       title: "Experience",
       value: "experience",
       content: (
-        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
+        <div className='w-full overflow-hidden relative h-full rounded-2xl px-5 py-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
           <p>Experience</p>
           <ExperienceContent />
         </div>
@@ -26,9 +26,9 @@ export function EductionExperience() {
   ];
 
   return (
-    <div className='h-[650px] md:h-[40rem] [perspective:1000px] relative flex flex-col max-w-xl mx-auto w-full  items-center justify-center mt-40 mb-4 px-4'>
+    <div className='h-[750px] md:h-[50rem] [perspective:1000px] relative flex flex-col max-w-xl mx-auto w-full  items-center justify-center mt-32 mb-56 px-4'>
       <h1 className='font-bold text-3xl mb-12 relative z-50 text-center'>
-       EDUCATION AND EXPERIENCE
+        EDUCATION AND EXPERIENCE
       </h1>
       <Tabs tabs={tabs} />
     </div>
