@@ -58,7 +58,7 @@ const CARDS = [
         priority
         width={200}
         height={150}
-        src='/food-delivery.jpg'
+        src='/food-delivery.jpeg'
         className='w-full aspect-video rounded-3xl'
       />
     ),
