@@ -65,14 +65,17 @@ const skillset = [
 ];
 const SkillsBtn = () => {
   return (
-    <div className='py-12 px-4 sm:px-7 max-w-3xl mx-auto bg-gray-50 dark:bg-gray-950'>
+    <div
+      id='skills'
+      className='py-12 px-4 sm:px-7 max-w-3xl mx-auto bg-gray-50 dark:bg-gray-950'>
       <h1 className='font-bold text-3xl mb-4 relative z-50 text-center '>
         SKILLS.
       </h1>
 
       <div className='mt-12 mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 sm:gap-3'>
         {skillset.map((skill) => (
-          <Link href={skill.link}
+          <Link
+            href={skill.link}
             key={skill.id}
             className=' flex flex-col justify-center items-center gap-3
          p-4 bg-white shadow-md dark:bg-gray-800 rounded-xl'>
