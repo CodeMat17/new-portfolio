@@ -5,16 +5,19 @@ import SkillsBtn from "@/components/SkillsBtn";
 import Hero from "@/components/ui/Hero";
 import { FloatingNav } from "@/components/ui/floatingNav";
 import { FaceIcon } from "@radix-ui/react-icons";
-
+import { FaRegCircleUser } from "react-icons/fa6";
 import { HomeIcon, SkullIcon } from "lucide-react";
+import { GiSkills } from "react-icons/gi";
+import { MdOutlineCastForEducation } from "react-icons/md";
+import { GrProjects } from "react-icons/gr";
 
 const Home = () => {
   const nav = [
     { name: "Home", link: "/", icon: <HomeIcon /> },
-    { name: "About", link: "#about", icon: <FaceIcon /> },
-    { name: "Skills", link: "#skills", icon: <SkullIcon /> },
-    { name: "Edu&Exp", link: "#edu&exp", icon: <SkullIcon /> },
-    { name: "Projects", link: "#projects", icon: <SkullIcon /> },
+    { name: "About", link: "#about", icon: <FaRegCircleUser /> },
+    { name: "Skills", link: "#skills", icon: <GiSkills /> },
+    { name: "Edu&Exp", link: "#edu&exp", icon: <MdOutlineCastForEducation /> },
+    { name: "Projects", link: "#projects", icon: <GrProjects /> },
   ];
 
   return (
