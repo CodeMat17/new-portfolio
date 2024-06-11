@@ -4,7 +4,7 @@ import { cn } from "@/utils/cn";
 import Image from "next/image";
 export function Projects() {
   return (
-    <div id="projects" className='h-[15rem] px-4 pt-8 mb-20 pb-64 flex flex-col items-center justify-center w-full'>
+    <div id="projects" className='h-[15rem] px-2 pt-8 mb-20 pb-64 flex flex-col items-center justify-center w-full'>
       <h1 className='font-bold text-3xl mb-12 relative z-50 text-center'>
         PROJECTS
       </h1>
