@@ -14,10 +14,22 @@ import { GrProjects } from "react-icons/gr";
 const Home = () => {
   const nav = [
     { name: "Home", link: "/", icon: <HomeIcon /> },
-    { name: "About", link: "#about", icon: <FaRegCircleUser /> },
-    { name: "Skills", link: "#skills", icon: <GiSkills /> },
-    { name: "Edu&Exp", link: "#edu&exp", icon: <MdOutlineCastForEducation /> },
-    { name: "Projects", link: "#projects", icon: <GrProjects /> },
+    {
+      name: "About",
+      link: "#about",
+      icon: <FaRegCircleUser className='w-6 h-6' />,
+    },
+    { name: "Skills", link: "#skills", icon: <GiSkills className='w-6 h-6' /> },
+    {
+      name: "Edu&Exp",
+      link: "#edu&exp",
+      icon: <MdOutlineCastForEducation className='w-6 h-6' />,
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+      icon: <GrProjects className='w-5 h-5' />,
+    },
   ];
 
   return (
