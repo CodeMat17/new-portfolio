@@ -7,7 +7,7 @@ export function EductionExperience() {
       title: "Education",
       value: "education",
       content: (
-        <div className='w-full overflow-hidden relative h-full rounded-2xl px-5 py-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
+        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
           <p>Education</p>
           <EducationContent />
         </div>
@@ -17,7 +17,7 @@ export function EductionExperience() {
       title: "Experience",
       value: "experience",
       content: (
-        <div className='w-full overflow-hidden relative h-full rounded-2xl px-5 py-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
+        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
           <p>Experience</p>
           <ExperienceContent />
         </div>
@@ -26,7 +26,7 @@ export function EductionExperience() {
   ];
 
   return (
-    <div className='h-[750px] md:h-[50rem] [perspective:1000px] relative flex flex-col max-w-xl mx-auto w-full  items-center justify-center mt-32 mb-56 px-4'>
+    <div className='h-[800px] sm:h-[750px] md:h-[600px] [perspective:1000px] relative flex flex-col sm:max-w-xl md:max-w-5xl mx-auto w-full items-center justify-center mt-32 mb-56 px-4'>
       <h1 className='font-bold text-3xl mb-12 relative z-50 text-center'>
         EDUCATION AND EXPERIENCE
       </h1>
@@ -35,41 +35,42 @@ export function EductionExperience() {
   );
 }
 
+
 const EducationContent = () => {
   return (
-    <div className='space-y-4 mb-4'>
-      <div className='leading-4 mt-3'>
-        <p className='text-lg font-semibold'>B. Tech</p>
-        <p className='text-lg font-normal'>Physics Electronics</p>
-        <p className='text-[16px] font-normal'>
+    <div className='mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 mt-3'>
+      <div className='leading-4'>
+        <p className='text-lg font-medium'>B. Tech</p>
+        <p className='text-lg font-light'>Physics Electronics</p>
+        <p className='text-[16px] font-light'>
           Nnamdi Azikiwe University, Awka, Nigeria
         </p>
       </div>
       <div className='leading-4'>
-        <p className='text-lg font-semibold'>PSLC 20</p>
-        <p className='text-lg font-normal'>
+        <p className='text-lg font-medium'>PSLC 20</p>
+        <p className='text-lg font-light'>
           Policy Strategy & Leadership Course
         </p>
-        <p className='text-[16px] font-normal'>
+        <p className='text-[16px] font-light'>
           National Institute For Policy & Strategic Studies, Kuru, Jos.
         </p>
-        <p className='text-[16px] font-normal'>2015</p>
+        <p className='text-[16px] font-light'>2015</p>
       </div>
       <div className='leading-4'>
-        <p className='text-lg font-semibold'>
+        <p className='text-lg font-medium'>
           Strategies For Revenue Generation
         </p>
-        <p className='text-lg font-normal'>Class 2014</p>
-        <p className='text-[16px] font-normal'>
+        <p className='text-lg font-light'>Class 2014</p>
+        <p className='text-[16px] font-light'>
           National Institute For Policy & Strategic Studies, Kuru, Jos.
         </p>
-        <p className='text-[16px] font-normal'>2015</p>
+        <p className='text-[16px] font-light'>2015</p>
       </div>
       <div className='leading-4'>
-        <p className='text-lg font-semibold'>Project Management</p>
-        <p className='text-lg font-normal'>MCARAKAN Resource Limited</p>
-        <p className='text-[16px] font-normal'>Enugu</p>
-        <p className='text-[16px] font-normal'>2011</p>
+        <p className='text-lg font-medium'>Project Management</p>
+        <p className='text-lg font-light'>MCARAKAN Resource Limited</p>
+        <p className='text-[16px] font-light'>Enugu</p>
+        <p className='text-[16px] font-light'>2011</p>
       </div>
     </div>
   );
@@ -77,23 +78,23 @@ const EducationContent = () => {
 
 const ExperienceContent = () => {
   return (
-    <div className='space-y-4 mb-4 mt-3'>
-      <div className='leading-4 '>
-        <p className='text-lg font-semibold'>Senior Developer</p>
-        <p className='text-lg font-normal'>CodeMat Soft-lutions</p>
-        <p className='text-[16px] font-normal'>Web Development</p>
+    <div className='mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mt-3'>
+      <div className='leading-4 font-normal'>
+        <p className='text-lg font-medium'>Senior Developer</p>
+        <p className='text-lg'>CodeMat Soft-lutions</p>
+        <p className='text-[16px]'>Web Development</p>
       </div>
-      <div className='leading-4'>
-        <p className='text-lg font-semibold'>Facilitator</p>
-        <p className='text-lg font-normal'>Google Africa with Andela</p>
-        <p className='text-[16px] font-normal'>Web Development</p>
-        <p className='text-[16px] font-normal'>2015</p>
+      <div className='leading-4  font-light'>
+        <p className='text-lg font-medium'>Facilitator</p>
+        <p className='text-lg'>Google Africa with Andela</p>
+        <p className='text-[16px]'>Web Development</p>
+        <p className='text-[16px]'>2015</p>
       </div>
-      <div className='leading-4'>
-        <p className='text-lg font-semibold'>Mentor</p>
-        <p className='text-lg font-normal'>Google Africa with Andela</p>
-        <p className='text-[16px] font-normal'>Web Development</p>
-        <p className='text-[16px] font-normal'>2015</p>
+      <div className='leading-4 font-light'>
+        <p className='text-lg font-medium'>Mentor</p>
+        <p className='text-lg'>Google Africa with Andela</p>
+        <p className='text-[16px]'>Web Development</p>
+        <p className='text-[16px]'>2015</p>
       </div>
     </div>
   );

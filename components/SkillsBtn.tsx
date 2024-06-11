@@ -46,7 +46,7 @@ const skillset = [
   },
   {
     id: 7,
-    tag: "FRAMER-MOTION",
+    tag: "FRAMER MOTION",
     icon: <LuFramer className='w-12 h-12' />,
     link: "https://framer.com/motion",
   },
@@ -70,7 +70,7 @@ const SkillsBtn = () => {
         SKILLS.
       </h1>
 
-      <div className='mt-12 mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5'>
+      <div className='mt-12 mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 sm:gap-3'>
         {skillset.map((skill) => (
           <Link href={skill.link}
             key={skill.id}
@@ -78,7 +78,7 @@ const SkillsBtn = () => {
          p-4 bg-white shadow-md dark:bg-gray-800 rounded-xl'>
             {/* <FaReact className='w-12 h-12' /> */}
             {skill.icon}
-            <p className='tracking-wider'>{skill.tag}</p>
+            <p className='tracking-wider text-center'>{skill.tag}</p>
           </Link>
         ))}
       </div>
