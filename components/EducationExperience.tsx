@@ -52,7 +52,7 @@ const EducationContent = () => {
           Policy Strategy & Leadership Course
         </p>
         <p className='text-[16px] font-light'>
-          National Institute For Policy & Strategic Studies, Kuru, Jos.
+          National Institute For Policy & Strategic Studies,Class 20, Kuru, Jos.
         </p>
         <p className='text-[16px] font-light'>2015</p>
       </div>
@@ -60,11 +60,11 @@ const EducationContent = () => {
         <p className='text-lg font-medium'>
           Strategies For Revenue Generation
         </p>
-        <p className='text-lg font-light'>Class 2014</p>
+        {/* <p className='text-lg font-light'>Class 2014</p> */}
         <p className='text-[16px] font-light'>
-          National Institute For Policy & Strategic Studies, Kuru, Jos.
+          Administrative Staff College of Nigeria, ASCON, Topo, Badgry, Lagos.
         </p>
-        <p className='text-[16px] font-light'>2015</p>
+        <p className='text-[16px] font-light'>2014</p>
       </div>
       <div className='leading-4'>
         <p className='text-lg font-medium'>Project Management</p>
