@@ -26,7 +26,7 @@ export function EductionExperience() {
   ];
 
   return (
-    <div id="edu&exp" className='h-[800px] sm:h-[750px] md:h-[600px] [perspective:1000px] relative flex flex-col sm:max-w-xl md:max-w-5xl mx-auto w-full items-center justify-center mt-32 mb-56 px-4'>
+    <div id="edu&exp" className='h-[850px] sm:h-[750px] md:h-[600px] [perspective:1000px] relative flex flex-col sm:max-w-xl md:max-w-5xl mx-auto w-full items-center justify-center mt-32 mb-56 px-4'>
       <h1 className='font-bold text-3xl mb-12 relative z-50 text-center'>
         EDUCATION AND EXPERIENCE
       </h1>

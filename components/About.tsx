@@ -26,7 +26,7 @@ export function About() {
             ABOUT ME.
           </h1>
 
-          <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
+          <p className='font-normal text-base text-slate-400 mb-4 relative z-50'>
             Hi, I&apos;m Matthew (aka CodeMat), a seasoned AI Assistant
             developer and full stack web developer (Mobile Web Specialist, MWS)
             with a passion for crafting exceptional digital experiences. With
@@ -34,28 +34,28 @@ export function About() {
             creating sleek, intuitive, responsive, dynamic, and user-friendly
             online solutions.
           </p>
-          <p className='font-semibold text-base text-slate-500 mb-4 relative z-50'>
+          <p className='font-semibold text-base text-slate-400 mb-4 relative z-50'>
             My Philosophy
           </p>
-          <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
+          <p className='font-normal text-base text-slate-400 mb-4 relative z-50'>
             I believe in continuous learning, updating my skills to keep pace
             with the ever-evolving internet landscape. I&apos;m dedicated to
             mentoring younger developers, having facilitated meetups across
             Africa (physically and remotely) for Google Africa via the Andela
             Learning Community (ALC) program for three seasons.
           </p>
-          <p className='font-semibold text-base text-slate-500 mb-4 relative z-50'>
+          <p className='font-semibold text-base text-slate-400 mb-4 relative z-50'>
             More...
           </p>
-          <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
+          <p className='font-normal text-base text-slate-400 mb-4 relative z-50'>
             I&apos;m a proud member of the Policy, Strategy, and Leadership
             Course (PSLC 20) at the prestigious National Institute For Policy
             and Strategic Studies (NIPSS), Kuru, Jos, Nigeria.
           </p>
-          <p className='font-semibold text-base text-slate-500 mb-4 relative z-50'>
+          <p className='font-semibold text-base text-slate-400 mb-4 relative z-50'>
             Let&apos;s Connect
           </p>
-          <p className='font-normal text-base text-slate-500 mb-4 relative z-50'>
+          <p className='font-normal text-base text-slate-400 mb-4 relative z-50'>
             I&apos;m excited to collaborate and bring your vision to life.
             Let&apos;s build something amazing together!
           </p>
