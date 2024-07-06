@@ -7,7 +7,7 @@ export function EductionExperience() {
       title: "Education",
       value: "education",
       content: (
-        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
+        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-900'>
           <p>Education</p>
           <EducationContent />
         </div>
@@ -17,7 +17,7 @@ export function EductionExperience() {
       title: "Experience",
       value: "experience",
       content: (
-        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-white bg-gray-800'>
+        <div className='w-full overflow-hidden relative h-full rounded-2xl p-10 text-3xl md:text-4xl font-bold text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-900'>
           <p>Experience</p>
           <ExperienceContent />
         </div>

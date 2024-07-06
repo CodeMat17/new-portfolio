@@ -23,12 +23,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='px-4 py-8 min-h-screen w-full dark:bg-gray-950 bg-gray-50  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center'>
+    <div className='px-4 py-8 min-h-screen w-full dark:bg-gray-800 bg-gray-50  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center'>
       {/* Radial gradient for the container to give a faded look */}
-      <div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-gray-950 bg-gray-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
+      <div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-gray-950 bg-gray-300 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
       <div className='flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-6'>
         <div className='sm:order-2'>
-          <p className='text-center sm:text-left text-gray-500 text-lg sm:hidden'>
+          <p className='text-center sm:text-left text-gray-400 text-lg sm:hidden z-50'>
             Software Developer
           </p>
           <Image
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
 
         <div className='sm:pl-4 w-full sm:max-w-[340px] md:max-w-[450px] lg:max-w-[550px]'>
-          <p className='text-center sm:text-left text-gray-500 text-lg hidden sm:block'>
+          <p className='text-center sm:text-left text-gray-300 text-lg hidden sm:block z-40'>
             Software Developer
           </p>
           <h1 className='text-center sm:text-left font-bold text-4xl md:text-5xl tracking-widest'>
@@ -68,8 +68,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='absolute top-4 left-4'>
-        {" "}
+      <div className='absolute top-4 right-4'>
         <ModeToggle />
       </div>
       <Statistics />
