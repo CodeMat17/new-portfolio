@@ -1,96 +1,87 @@
-"use client";
-import { CardStack } from "@/components/ui/card-stack";
-import { cn } from "@/utils/cn";
 import Image from "next/image";
-export function Projects() {
-  return (
-    <div id="projects" className='h-[15rem] px-2 pt-8 mb-20 pb-64 flex flex-col items-center justify-center w-full'>
-      <h1 className='font-bold text-3xl mb-12 relative z-50 text-center'>
-        PROJECTS
-      </h1>
-      <CardStack items={CARDS} />
-    </div>
-  );
-}
+import { Button } from "./ui/button";
+import Link from "next/link";
 
-// Small utility to highlight the content of specific section of a testimonial content
-export const Highlight = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <span
-      className={cn(
-        "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
-        className
-      )}>
-      {children}
-    </span>
-  );
-};
-
-const CARDS = [
-  {
-    id: 0,
-    name: "Hoodies eShop",
-    designation: "An eCommerce application",
-    content: (
-      <Image
-        alt=''
-        priority
-        width={200}
-        height={150}
-        src='/e-comm.webp'
-        className='w-full aspect-video rounded-3xl'
-      />
-    ),
-  },
+const projects = [
   {
     id: 1,
-    name: "Food Delivery",
-    designation: "A delivery application",
-    content: (
-      <Image
-        alt=''
-        priority
-        width={200}
-        height={150}
-        src='/food-delivery.jpeg'
-        className='w-full aspect-video rounded-3xl'
-      />
-    ),
+    name: "Attendance Register",
+    desc: "Developed with Next.js, Tailwind CSS, TypeScript, and Supabase, this versatile Online Attendance Register streamlines attendance tracking for schools, organizations, and more. It offers a user-friendly interface for efficient and accurate management.",
+    img: "/ss/ss-attendance.png",
+    link: "https://attendance-demo-black.vercel.app",
   },
   {
     id: 2,
-    name: "Hulu",
-    designation: "An online film streaming app",
-    content: (
-      <Image
-        alt=''
-        priority
-        width={200}
-        height={150}
-        src='/hulu.webp'
-        className='w-full aspect-video rounded-3xl'
-      />
-    ),
+    name: "Volks Rental Services",
+    desc: "Developed with Next.js, Tailwind CSS, TypeScript, and Supabase, Volks Rental Services streamlines car rental bookings for users. It offers a user-friendly interface for efficient and accurate management of rental services, catering to diverse customer needs.",
+    img: "/ss/ss-volks.png",
+    link: "https://volks-rentals.vercel.app",
   },
   {
     id: 3,
-    name: "Photo Gallery",
-    designation: "A photo studio gallery app",
-    content: (
-      <Image
-        alt=''
-        priority
-        width={200}
-        height={150}
-        src='/photo-studio.webp'
-        className='w-full aspect-video rounded-3xl'
-      />
-    ),
+    name: "Disney-Clone",
+    desc: "Developed with Next.js, Tailwind CSS, TypeScript, and Supabase, this Disney-clone app provides a seamless streaming experience for users. It offers a user-friendly interface for efficient browsing and playback of content, mirroring the functionality and design of the original platform.",
+    img: "/ss/ss-disney-clone.webp",
+    link: "https://disney-m.vercel.app",
+  },
+  {
+    id: 4,
+    name: "Hulu-Clone",
+    desc: "Developed with Next.js, Tailwind CSS, TypeScript, and Supabase, this Hulu-clone app delivers a seamless streaming experience. It features a user-friendly interface for efficient browsing and playback of content, closely replicating the functionality and design of the original Hulu platform.",
+    img: "/ss/ss-hulu-clone.webp",
+    link: "https://hulu-clone-mctony17.vercel.app",
   },
 ];
+
+const Projects = () => {
+  return (
+    <div id='projects' className='w-full max-w-5xl mx-auto'>
+      <h1 className='font-bold text-3xl relative z-50 text-center'>PROJECTS</h1>
+      <p className='text-center text-gray-400 font-light mb-12'>
+        (Selected few)
+      </p>
+
+      <div className='px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4'>
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className=' group border rounded-xl overflow-hidden transition transform duration-300 hover:scale-105'>
+            <div className='relative '>
+              <Image
+                alt='project image'
+                priority
+                src={project.img}
+                width={320}
+                height={200}
+                className='w-full aspect-video '
+              />
+              <div className='absolute flex items-center justify-center  inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity duration-700'>
+                <p className='p-4 text-sm text-center text-white font-light'>
+                  {project.desc}
+                </p>
+              </div>
+            </div>
+
+            <div className='p-4 flex items-center justify-between'>
+              <h3 className='text-lg font-semibold text-gray-600 group-hover:text-gray-400 transition-color duration-500 transition-all transform text-center group-hover:text-left '>
+                {project.name}
+              </h3>
+              <Button asChild
+                variant='ghost'
+                className='text-xs hidden group-hover:flex'>
+                <Link href={project.link}>  View project
+                </Link>
+              
+              </Button>
+              {/* <a href={project.link} className='block text-sm font-medium text-white bg-blue-500 hover:bg-blue-400 rounded-full py-2 px-4 mt-2'>
+                View Project
+              </a> */}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Projects;

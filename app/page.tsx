@@ -1,6 +1,6 @@
 import { About } from "@/components/About";
 import { EductionExperience } from "@/components/EducationExperience";
-import { Projects } from "@/components/Projects";
+import Projects from "@/components/Projects";
 import SkillsBtn from "@/components/SkillsBtn";
 import Hero from "@/components/ui/Hero";
 import { FloatingNav } from "@/components/ui/floatingNav";
