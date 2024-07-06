@@ -18,7 +18,7 @@ const Statistics = () => {
         tag='TECHNOLOGIES MASTERED'
         classnames='animate-shimmer3'
       />
-      <StatBtn number={56} tag='HAPPY CLIENTS' classnames='animate-shimmer4' />
+      <StatBtn number={207} tag='HAPPY CLIENTS' classnames='animate-shimmer4' />
     </div>
   );
 };
