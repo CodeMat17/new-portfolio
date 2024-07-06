@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const projects = [
   {
@@ -48,7 +48,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className=' group border dark:border-sky-900 shadow-md dark:shadow-sky-700 rounded-xl overflow-hidden transition transform duration-300 hover:scale-105'>
+              className=' group border dark:border-gray-800 shadow-md dark:shadow-gray-800 rounded-xl overflow-hidden transition transform duration-300 hover:scale-105'>
               <div className='relative '>
                 <Image
                   alt='project image'
