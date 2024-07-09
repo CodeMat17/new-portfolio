@@ -48,7 +48,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className=' group border dark:border-gray-800 shadow-md dark:shadow-gray-800 rounded-xl overflow-hidden transition transform duration-300 hover:scale-105'>
+              className='relative group border dark:border-gray-800 shadow-md dark:shadow-gray-800 rounded-xl overflow-hidden transition transform duration-300 hover:scale-105'>
               <div className='relative '>
                 <Image
                   alt='project image'
@@ -77,11 +77,18 @@ const Projects = () => {
                 </Button>
                 <Button
                   variant='ghost'
-                  className='text-xs group-hover:hidden border rounded-full'>
-                  <span className='md:hidden'>Tap</span>
-                  <span className='hidden md:inline'>Hover</span>
+                  className='hidden md:flex text-xs group-hover:hidden border rounded-full'>
+                Hover
                 </Button>
+
+              
               </div>
+
+                <Button
+                  variant='ghost'
+                  className='absolute top-3 right-3 text-xs group-hover:hidden border border-sky-500 text-sky-500 rounded-full md:hidden'>
+                 Tap
+                </Button>
             </div>
           ))}
         </div>
