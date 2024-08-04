@@ -31,6 +31,13 @@ const projects = [
     img: "/ss/ss-hulu-clone.webp",
     link: "https://hulu-clone-mctony17.vercel.app",
   },
+  {
+    id: 5,
+    name: "Medibook Clinic",
+    desc: "Developed with Next.js, Tailwind CSS, TypeScript, Resend, React-email and Supabase, this Medibook app is an online clinic appointment request application.  It features a user-friendly interface and as soon as your appointment is confirmed, you will receive a confirmation email with the scheduled details.",
+    img: "/ss/ss-medibook.png",
+    link: "https://medibook-clinic.vercel.app/",
+  },
 ];
 
 const Projects = () => {
@@ -44,7 +51,7 @@ const Projects = () => {
           (Selected few)
         </p>
 
-        <div className='px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        <div className='px-4 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           {projects.map((project) => (
             <div
               key={project.id}
